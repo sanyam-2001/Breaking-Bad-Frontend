@@ -1,0 +1,51 @@
+.characterPane{
+    position: relative;
+    cursor: pointer;
+}
+.characterOverlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scaleY(0);
+    transition:transform 0.4s ease;
+    transform-origin: top;
+    font-family: "IBM Plex Serif";
+    color:white;
+
+
+}
+.characterPane:hover .characterOverlay{
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+.bottomContainer{
+    position: absolute;
+    bottom:5%;
+    right:5%;
+}
+.topContainer{
+    position: absolute;
+    top:5%;
+    right:5%;
+}
+.overlayName{
+    
+    font-size:3em;
+    font-weight: 400;
+}
+.overlayStatus{
+    font-size:1.5em;
+    font-weight:200;
+    text-align:right;
+}
+.overlayBirthday{
+    writing-mode: vertical-rl;
+    position: absolute;
+    top:50%;
+    transform: rotateZ(180deg) translateY(50%);
+    font-size:2em;
+
+}

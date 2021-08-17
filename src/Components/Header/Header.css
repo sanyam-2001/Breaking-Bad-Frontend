@@ -1,0 +1,17 @@
+.headerContainer{
+    margin-top:5vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    z-index:999;
+    position: relative;
+}
+.main-logo{
+    height: 10vh;
+}
+.hamburgerMenuIcon{
+    height: 10vh;
+    font-size: 40px;
+    cursor: pointer;
+}

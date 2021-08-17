@@ -1,0 +1,32 @@
+.mainContainer{
+    width:100%;
+    background-color:rgba(200, 200, 200, 0.1);
+    /* Delete Padding */
+    padding-bottom:5em;
+}
+
+.filterPanel{
+    padding-top:5%;
+    display:grid;
+    grid-template-columns:auto auto;
+    column-gap: 5%;
+}
+
+.searchBar{
+    padding:1.1em;
+    outline:none;
+    border:none;
+    font-family:'IBM Plex Serif';
+    background-color: rgba(31, 31, 31, 0.829);
+    border-radius: 0;
+    color: white;
+    font-size:1em;
+}
+
+@media only screen and (max-width:1000px){
+    .filterPanel{
+
+        grid-template-columns:auto;
+    }
+    
+}

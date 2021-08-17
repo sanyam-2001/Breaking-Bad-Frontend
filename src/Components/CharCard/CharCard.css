@@ -1,0 +1,51 @@
+.charCardContainer{
+    height:80vh;
+    width:70%;
+    margin:auto;
+    background-color:rgb(228, 243, 255);
+    margin-top: 10vh;
+    display:flex;
+    justify-content: space-between;
+    padding:2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.418);
+    backdrop-filter: saturate(110%) blur(10px);
+    font-family: "IBM Plex Serif";
+
+}
+.imageContainer{
+    width:35%;
+}
+.detailContainer{
+    width:55%;
+    position:relative;
+}
+.detailName{
+    position: absolute;
+    bottom:5%;
+    right:5%;
+    font-weight: 600;
+}
+.dataEntry{
+    padding:0.5em;
+    margin:0.5em;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px  rgba(0, 0, 0, 0.13);
+    background-color:white
+}
+
+@media only screen and (max-width:1000px){
+    .charCardContainer{
+        width:90%;
+        height: fit-content;
+        padding:1em;
+        flex-direction: column;  
+        margin-top: 20vh;  
+    }
+    .detailContainer{
+        width:100%
+    }
+    .detailName{
+        position:relative;
+        font-size: 1em;
+    }
+}

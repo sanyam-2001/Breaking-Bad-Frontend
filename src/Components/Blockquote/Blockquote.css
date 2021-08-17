@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300italic");
+
+blockquote{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    margin-top:5%;
+    margin-bottom:5%;
+}
+.padding {
+  padding: 40px;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  color: #888;
+  font-family: "Merriweather Sans", sans-serif;
+}
+@media screen and (max-width:1000px){
+  .padding {
+    padding: 20px;
+    font-size: 1em;
+
+  }
+
+}
+
+blockquote {
+  width: 100%;
+
+}
+blockquote .blockquote-content {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border-top: 10px solid #BDCDE8;
+  background-color: #fff;
+  position: relative;
+}
+blockquote .blockquote-content:before {
+  width: 250px;
+  height: 250px;
+  display: block;
+  background-color: #BDCDE8;
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.3;
+  -webkit-transform: translate(30%, 30%);
+  -ms-transform: translate(30%, 30%);
+  -moz-transform: translate(30%, 30%);
+  -o-transform: translate(30%, 30%);
+  transform: translate(30%, 30%);
+  background-position: center center;
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-image: url(http://www.michaelmammoliti.com/_projects/blockquotes/_media/icons/blockquotes.png);
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+blockquote .blockquote-content p {
+  position: relative;
+  font-style: oblique;
+  z-index: 2;
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    zoom: 0.8;
+  }
+}
+@media screen and (max-height: 300px) {
+  body {
+    zoom: 0.8;
+  }
+}
